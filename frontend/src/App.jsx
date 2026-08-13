@@ -47,7 +47,7 @@ function SearchPage() {
     return (
       <div style={{ position: 'relative', zIndex: 2 }} className="min-h-[calc(100vh-56px)] bg-slate-900 px-6 py-10">
         <div className="max-w-xl mx-auto mb-8 flex flex-col items-center">
-          <div className="inline-flex gap-1 mb-3 bg-slate-800 rounded-full p-0.5">
+          <div className="inline-flex gap-1 mb-2 bg-slate-800 rounded-full p-0.5">
             <button
               onClick={() => { setMode('movie'); setResults([]) }}
               className={`px-4 py-1 rounded-full text-xs font-semibold transition ${mode === 'movie' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-white'}`}
@@ -61,21 +61,21 @@ function SearchPage() {
               {t('search.tvToggle')}
             </button>
           </div>
-          <form onSubmit={handleSearch} className="w-full max-w-[240px] flex items-center gap-1.5 bg-black/60 backdrop-blur-xl rounded-full pl-3 pr-1 py-0.5 border border-white/10 shadow-2xl">
-  <input
-    type="text"
-    value={query}
-    onChange={(e) => setQuery(e.target.value)}
-    placeholder={mode === 'movie' ? t('search.moviePlaceholder') : t('search.showPlaceholder')}
-    className="flex-1 bg-transparent text-xs placeholder-slate-400 focus:outline-none py-1"
-  />
-  <button
-    type="submit"
-    className="px-3 py-1 text-xs rounded-full bg-blue-600 hover:bg-blue-500 transition font-semibold whitespace-nowrap"
-  >
-    {t('search.button')}
-  </button>
-</form>
+          <form onSubmit={handleSearch} className="w-full flex items-center gap-2 bg-slate-800 rounded-full pl-4 pr-1.5 py-1.5 border border-slate-700">
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={mode === 'movie' ? t('search.moviePlaceholder') : t('search.showPlaceholder')}
+              className="flex-1 bg-transparent text-sm placeholder-slate-500 focus:outline-none"
+            />
+            <button
+              type="submit"
+              className="px-5 py-2 text-sm rounded-full bg-blue-600 hover:bg-blue-700 transition font-semibold"
+            >
+              {t('search.button')}
+            </button>
+          </form>
           {loading && <p className="text-center text-slate-400 text-sm mt-3">{t('search.searching')}</p>}
           {error && <p className="text-center text-red-400 text-sm mt-3">{error}</p>}
         </div>
@@ -115,7 +115,7 @@ function SearchPage() {
     <div
       style={{
         position: 'fixed',
-        top: 'calc(50% + 65px)',
+        top: 'calc(50% + 57px)',
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: '100%',
@@ -130,36 +130,36 @@ function SearchPage() {
       />
 
       <div className="relative w-full flex flex-col items-center">
-        <div className="inline-flex gap-1 mb-0.5 bg-black/50 backdrop-blur-xl rounded-full p-0.5 border border-white/10 shadow-2xl">
-  <button
-    onClick={() => { setMode('movie'); setResults([]) }}
-    className={`px-3 py-1 rounded-full text-xs font-semibold transition ${mode === 'movie' ? 'bg-blue-600 text-white' : 'text-slate-300 hover:text-white'}`}
-  >
-    {t('search.moviesToggle')}
-  </button>
-  <button
-    onClick={() => { setMode('tv'); setResults([]) }}
-    className={`px-3 py-1 rounded-full text-xs font-semibold transition ${mode === 'tv' ? 'bg-blue-600 text-white' : 'text-slate-300 hover:text-white'}`}
-  >
-    {t('search.tvToggle')}
-  </button>
-</div>
+        <div className="inline-flex gap-1 mb-2 bg-black/50 backdrop-blur-xl rounded-full p-0.5 border border-white/10 shadow-2xl">
+          <button
+            onClick={() => { setMode('movie'); setResults([]) }}
+            className={`px-3 py-1 rounded-full text-xs font-semibold transition ${mode === 'movie' ? 'bg-blue-600 text-white' : 'text-slate-300 hover:text-white'}`}
+          >
+            {t('search.moviesToggle')}
+          </button>
+          <button
+            onClick={() => { setMode('tv'); setResults([]) }}
+            className={`px-3 py-1 rounded-full text-xs font-semibold transition ${mode === 'tv' ? 'bg-blue-600 text-white' : 'text-slate-300 hover:text-white'}`}
+          >
+            {t('search.tvToggle')}
+          </button>
+        </div>
 
-<form onSubmit={handleSearch} className="w-full flex items-center gap-2 bg-black/60 backdrop-blur-xl rounded-full pl-4 pr-1 py-1 border border-white/10 shadow-2xl">
-  <input
-    type="text"
-    value={query}
-    onChange={(e) => setQuery(e.target.value)}
-    placeholder={mode === 'movie' ? t('search.moviePlaceholder') : t('search.showPlaceholder')}
-    className="flex-1 bg-transparent text-xs placeholder-slate-400 focus:outline-none"
-  />
-  <button
-    type="submit"
-    className="px-4 py-1.5 text-xs rounded-full bg-blue-600 hover:bg-blue-500 transition font-semibold whitespace-nowrap"
-  >
-    {t('search.button')}
-  </button>
-</form>
+        <form onSubmit={handleSearch} className="w-full max-w-[240px] flex items-center gap-1.5 bg-black/60 backdrop-blur-xl rounded-full pl-3 pr-1 py-0.5 border border-white/10 shadow-2xl">
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder={mode === 'movie' ? t('search.moviePlaceholder') : t('search.showPlaceholder')}
+            className="flex-1 bg-transparent text-xs placeholder-slate-400 focus:outline-none py-1"
+          />
+          <button
+            type="submit"
+            className="px-3 py-1 text-xs rounded-full bg-blue-600 hover:bg-blue-500 transition font-semibold whitespace-nowrap"
+          >
+            {t('search.button')}
+          </button>
+        </form>
 
         {loading && <p className="text-center text-slate-200 text-sm mt-3 drop-shadow-lg">{t('search.searching')}</p>}
         {error && <p className="text-center text-red-400 text-sm mt-3 drop-shadow-lg">{error}</p>}
@@ -173,20 +173,20 @@ function NavBar() {
   const { user, logout } = useAuth()
 
   return (
-    <nav style={{ position: 'relative', zIndex: 2 }} className="flex items-center justify-between px-6 py-3 bg-slate-900/70 backdrop-blur-sm">
-      <Link to="/" className="text-xl font-bold">{t('nav.title')}</Link>
-      <div className="flex items-center gap-4 text-sm">
-        <Link to="/insights" className="text-blue-400 hover:underline">{t('nav.topRated')}</Link>
+    <nav style={{ position: 'relative', zIndex: 2 }} className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 px-4 sm:px-6 py-3 bg-slate-900/70 backdrop-blur-sm">
+      <Link to="/" className="text-lg sm:text-xl font-bold">{t('nav.title')}</Link>
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm">
+        <Link to="/insights" className="text-blue-400 hover:underline whitespace-nowrap">{t('nav.topRated')}</Link>
         {user ? (
           <>
-            <Link to="/my-ratings" className="text-blue-400 hover:underline">{t('nav.myRatings')}</Link>
-            <span className="text-slate-400">{t('nav.greeting', { name: user.username })}</span>
-            <button onClick={logout} className="text-blue-400 hover:underline">{t('nav.logout')}</button>
+            <Link to="/my-ratings" className="text-blue-400 hover:underline whitespace-nowrap">{t('nav.myRatings')}</Link>
+            <span className="text-slate-400 hidden sm:inline whitespace-nowrap">{t('nav.greeting', { name: user.username })}</span>
+            <button onClick={logout} className="text-blue-400 hover:underline whitespace-nowrap">{t('nav.logout')}</button>
           </>
         ) : (
           <>
-            <Link to="/login" className="text-blue-400 hover:underline">{t('nav.login')}</Link>
-            <Link to="/signup" className="text-blue-400 hover:underline">{t('nav.signup')}</Link>
+            <Link to="/login" className="text-blue-400 hover:underline whitespace-nowrap">{t('nav.login')}</Link>
+            <Link to="/signup" className="text-blue-400 hover:underline whitespace-nowrap">{t('nav.signup')}</Link>
           </>
         )}
         <LanguageSwitcher />
