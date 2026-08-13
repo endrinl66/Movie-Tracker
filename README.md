@@ -1,6 +1,11 @@
 # Movie Tracker 🎬
 
-A full-stack movie and TV show tracking application where users can search for content, rate what they've watched, track their watchlist, discuss with other users, and discover top-rated titles — all powered by real data from TMDb.
+![Python](https://img.shields.io/badge/Python-3.11+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688)
+![React](https://img.shields.io/badge/React-18-61DAFB)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791)
+
+A full-stack movie and TV show tracking application where users can search for content, rate what they've watched, track their personal watchlist, discuss titles with other users, and discover top-rated content — all powered by real data from TMDb.
 
 ## Screenshots
 
@@ -13,6 +18,14 @@ A full-stack movie and TV show tracking application where users can search for c
 ### Movie Detail
 ![Movie Detail](screenshots/movie-detail.png)
 
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Architecture Highlights](#architecture-highlights)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Roadmap](#roadmap)
 
 ## Features
 
