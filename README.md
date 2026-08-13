@@ -2,6 +2,18 @@
 
 A full-stack movie and TV show tracking application where users can search for content, rate what they've watched, track their watchlist, discuss with other users, and discover top-rated titles — all powered by real data from TMDb.
 
+## Screenshots
+
+### Homepage
+![Homepage](screenshots/homepage.png)
+
+### Search
+![Search](screenshots/movie-search.png)
+
+### Movie Detail
+![Movie Detail](screenshots/movie-detail.png)
+
+
 ## Features
 
 - **Search & Browse** — Search movies and TV shows via TMDb, with an animated poster backdrop homepage
