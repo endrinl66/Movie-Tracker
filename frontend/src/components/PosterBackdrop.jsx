@@ -40,7 +40,7 @@ function PosterBackdrop() {
       }}
       className="bg-slate-900"
     >
-      <div className="grid grid-cols-9 grid-rows-3 gap-1 h-full w-full">
+      <div className="grid grid-cols-3 grid-rows-4 sm:grid-cols-5 sm:grid-rows-3 lg:grid-cols-9 lg:grid-rows-3 gap-1 h-full w-full">
         {posters.map((movie) => (
           <img
             key={movie.tmdb_id}
