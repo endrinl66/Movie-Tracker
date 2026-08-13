@@ -1,0 +1,11 @@
+{
+  "nav": { "title": "Movie Tracker 🎬", "topRated": "トップ評価", "myRatings": "マイ評価", "login": "ログイン", "signup": "登録", "logout": "ログアウト", "greeting": "こんにちは、{{name}}さん" },
+  "search": { "moviesToggle": "映画", "tvToggle": "テレビ番組", "moviePlaceholder": "映画を検索...", "showPlaceholder": "番組を検索...", "button": "検索", "searching": "検索中...", "noPoster": "ポスターなし", "error": "検索中に問題が発生しました。" },
+  "login": { "title": "ログイン", "username": "ユーザー名", "password": "パスワード", "button": "ログイン", "noAccount": "アカウントがありませんか？", "signupLink": "登録", "invalid": "ユーザー名またはパスワードが無効です。" },
+  "signup": { "title": "登録", "username": "ユーザー名", "email": "メール", "password": "パスワード", "button": "登録", "haveAccount": "既にアカウントをお持ちですか？", "loginLink": "ログイン" },
+  "detail": { "back": "← 戻る", "wantToWatch": "観たい", "watched": "視聴済み", "directedBy": "監督", "cast": "キャスト", "seasons": "シーズン", "episodes": "エピソード", "rateMovie": "この映画を評価", "rateShow": "この番組を評価", "rating": "評価 (0–10)", "review": "レビュー（任意）", "reviewPlaceholder": "感想は？", "submitRating": "評価を送信", "saving": "保存中...", "ratingSaved": "評価を保存しました！", "loginToRateMovie": "評価するにはログインしてください。", "loginToRateShow": "評価するにはログインしてください。", "loading": "読み込み中...", "couldNotLoadMovie": "この映画を読み込めませんでした。", "couldNotLoadShow": "この番組を読み込めませんでした。" },
+  "insights": { "title": "トップ評価 🏆", "loading": "読み込み中...", "topMovies": "トップ映画", "topShows": "トップ番組", "topActors": "トップ俳優", "topDirectors": "トップ監督", "notEnoughMovies": "映画の評価がまだ十分ではありません。", "notEnoughShows": "番組の評価がまだ十分ではありません。", "notEnoughActors": "俳優の評価がまだ十分ではありません。", "notEnoughDirectors": "監督の評価がまだ十分ではありません。" },
+  "myRatings": { "title": "マイ評価", "loginPrompt": "評価を見るにはログインしてください。", "loading": "評価を読み込み中...", "empty": "まだ映画を評価していません。", "searchLink": "検索する" },
+  "comments": { "title": "コメント", "placeholder": "感想をシェア...", "post": "コメントを投稿", "posting": "投稿中...", "loginPrompt": "コメントするにはログインしてください。", "loading": "コメントを読み込み中...", "empty": "まだコメントはありません — 最初の投稿者になりましょう。", "delete": "削除" },
+  "translate": { "translate": "翻訳", "translating": "翻訳中...", "showOriginal": "原文を表示" }
+}
